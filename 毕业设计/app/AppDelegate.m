@@ -12,6 +12,9 @@
 #import <ParseUI/ParseUI.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 
+#define kParseId @"vKyyGRKsLBpomdWtDW7vuyA4YBYqHAeBj1QcBaLu"
+#define kParseClientKey @"Z7EZjSlePFRjK6KKOPoNWei8UJPRxCWvRbJhW4SS"
+
 @interface AppDelegate ()
 
 @end
@@ -24,11 +27,7 @@
     // 设置状态栏为白色
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    // 示例
-    [Parse setApplicationId:@"DKX7bHqZyHgTUPdJJBDldAtLZhJfo0RzH5qMbyyN" clientKey:@"n4WvdsuQo1jgHPa82ngyve6vgIA3EVvQqpb2rEWe"];
-    
-    // 设置Parse的appid 和 clientKey 
-//    [Parse setApplicationId:@"DKX7bHqZyHgTUPdJJBDldAtLZhJfo0RzH5qMbyyN" clientKey:@"n4WvdsuQo1jgHPa82ngyve6vgIA3EVvQqpb2rEWe"];
+    [Parse setApplicationId:kParseId clientKey:kParseClientKey];
 
     // 跟踪应用程序打开的统计数据
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
@@ -44,7 +43,7 @@
     [application registerUserNotificationSettings:settings];
     [application registerForRemoteNotifications];
     //---------------------------------------------------------------------------------------------------------------------------------------------
-    [PFFacebookUtils initializeFacebook];
+//    [PFFacebookUtils initializeFacebook];
     //---------------------------------------------------------------------------------------------------------------------------------------------
     //---------------------------------------------------------------------------------------------------------------------------------------------
     [PFImageView class];

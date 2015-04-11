@@ -27,7 +27,6 @@
 		8440BD071AD6AC79001C8612 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8440BD061AD6AC79001C8612 /* libc++.dylib */; };
 		8440BD091AD6B0FF001C8612 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8440BD081AD6B0FF001C8612 /* Social.framework */; };
 		8440BD0B1AD6B11E001C8612 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8440BD0A1AD6B11E001C8612 /* FacebookSDK.framework */; };
-		84B2724D1AD54D3000895C74 /* ____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2724C1AD54D3000895C74 /* ____Tests.m */; };
 		84B272751AD54E5900895C74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2726B1AD54E5900895C74 /* AppDelegate.m */; };
 		84B272761AD54E5900895C74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B2726C1AD54E5900895C74 /* LaunchScreen.xib */; };
 		84B272771AD54E5900895C74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B2726E1AD54E5900895C74 /* Main.storyboard */; };
@@ -103,11 +102,8 @@
 		84B2735D1AD560A700895C74 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B2735C1AD560A700895C74 /* UIImage+Category.m */; };
 		84B273621AD563B700895C74 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B273601AD563B700895C74 /* RegisterViewController.m */; };
 		84B273631AD563B700895C74 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B273611AD563B700895C74 /* RegisterViewController.xib */; };
-		84B2736B1AD56C5A00895C74 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B273651AD56C5A00895C74 /* Bolts.framework */; };
 		84B2736C1AD56C5A00895C74 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B273661AD56C5A00895C74 /* Parse.framework */; };
-		84B2736D1AD56C5A00895C74 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B273671AD56C5A00895C74 /* ParseCrashReporting.framework */; };
 		84B2736E1AD56C5A00895C74 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B273681AD56C5A00895C74 /* ParseFacebookUtils.framework */; };
-		84B2736F1AD56C5A00895C74 /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B273691AD56C5A00895C74 /* ParseFacebookUtilsV4.framework */; };
 		84B273701AD56C5A00895C74 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B2736A1AD56C5A00895C74 /* ParseUI.framework */; };
 		84B273721AD56CD100895C74 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B273711AD56CD100895C74 /* AudioToolbox.framework */; };
 		84B273741AD56CD900895C74 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B273731AD56CD900895C74 /* CFNetwork.framework */; };
@@ -127,16 +123,6 @@
 		84B2739A1AD56E2400895C74 /* images.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B273931AD56E2400895C74 /* images.m */; };
 		84B2739B1AD56E2400895C74 /* utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B273951AD56E2400895C74 /* utilities.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		84B272471AD54D3000895C74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84B272251AD54D3000895C74 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84B2722C1AD54D3000895C74;
-			remoteInfo = "毕业设计";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8440BCCB1AD69442001C8612 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
@@ -166,7 +152,6 @@
 		8440BD081AD6B0FF001C8612 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8440BD0A1AD6B11E001C8612 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		84B2722D1AD54D3000895C74 /* XpressChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XpressChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		84B272461AD54D3000895C74 /* XpressChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XpressChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B2724B1AD54D3000895C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B2724C1AD54D3000895C74 /* ____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____Tests.m"; sourceTree = "<group>"; };
 		84B2726A1AD54E5900895C74 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -314,11 +299,8 @@
 		84B2735F1AD563B700895C74 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		84B273601AD563B700895C74 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		84B273611AD563B700895C74 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
-		84B273651AD56C5A00895C74 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		84B273661AD56C5A00895C74 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		84B273671AD56C5A00895C74 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		84B273681AD56C5A00895C74 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
-		84B273691AD56C5A00895C74 /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		84B2736A1AD56C5A00895C74 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 		84B273711AD56CD100895C74 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		84B273731AD56CD900895C74 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -368,18 +350,8 @@
 				84B273721AD56CD100895C74 /* AudioToolbox.framework in Frameworks */,
 				84B273701AD56C5A00895C74 /* ParseUI.framework in Frameworks */,
 				84B2736C1AD56C5A00895C74 /* Parse.framework in Frameworks */,
-				84B2736D1AD56C5A00895C74 /* ParseCrashReporting.framework in Frameworks */,
 				84B2736E1AD56C5A00895C74 /* ParseFacebookUtils.framework in Frameworks */,
 				8440BD0B1AD6B11E001C8612 /* FacebookSDK.framework in Frameworks */,
-				84B2736B1AD56C5A00895C74 /* Bolts.framework in Frameworks */,
-				84B2736F1AD56C5A00895C74 /* ParseFacebookUtilsV4.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B272431AD54D3000895C74 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,7 +490,6 @@
 			isa = PBXGroup;
 			children = (
 				84B2722D1AD54D3000895C74 /* XpressChat.app */,
-				84B272461AD54D3000895C74 /* XpressChatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -873,11 +844,8 @@
 				84B273751AD56CEC00895C74 /* CoreGraphics.framework */,
 				84B273731AD56CD900895C74 /* CFNetwork.framework */,
 				84B273711AD56CD100895C74 /* AudioToolbox.framework */,
-				84B273651AD56C5A00895C74 /* Bolts.framework */,
 				84B273661AD56C5A00895C74 /* Parse.framework */,
-				84B273671AD56C5A00895C74 /* ParseCrashReporting.framework */,
 				84B273681AD56C5A00895C74 /* ParseFacebookUtils.framework */,
-				84B273691AD56C5A00895C74 /* ParseFacebookUtilsV4.framework */,
 				84B2736A1AD56C5A00895C74 /* ParseUI.framework */,
 			);
 			path = "parse-library-1.7.1";
@@ -929,24 +897,6 @@
 			productReference = 84B2722D1AD54D3000895C74 /* XpressChat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		84B272451AD54D3000895C74 /* XpressChatTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 84B272531AD54D3000895C74 /* Build configuration list for PBXNativeTarget "XpressChatTests" */;
-			buildPhases = (
-				84B272421AD54D3000895C74 /* Sources */,
-				84B272431AD54D3000895C74 /* Frameworks */,
-				84B272441AD54D3000895C74 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				84B272481AD54D3000895C74 /* PBXTargetDependency */,
-			);
-			name = XpressChatTests;
-			productName = "毕业设计Tests";
-			productReference = 84B272461AD54D3000895C74 /* XpressChatTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -958,10 +908,7 @@
 				TargetAttributes = {
 					84B2722C1AD54D3000895C74 = {
 						CreatedOnToolsVersion = 6.2;
-					};
-					84B272451AD54D3000895C74 = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 84B2722C1AD54D3000895C74;
+						DevelopmentTeam = 43Y5NG38BR;
 					};
 				};
 			};
@@ -979,7 +926,6 @@
 			projectRoot = "";
 			targets = (
 				84B2722C1AD54D3000895C74 /* XpressChat */,
-				84B272451AD54D3000895C74 /* XpressChatTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1012,13 +958,6 @@
 				8440BCF51AD69C54001C8612 /* profile_blank@2x.png in Resources */,
 				84B272771AD54E5900895C74 /* Main.storyboard in Resources */,
 				84B2732B1AD5551800895C74 /* JSQMessagesViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B272441AD54D3000895C74 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1105,23 +1044,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		84B272421AD54D3000895C74 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84B2724D1AD54D3000895C74 /* ____Tests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		84B272481AD54D3000895C74 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84B2722C1AD54D3000895C74 /* XpressChat */;
-			targetProxy = 84B272471AD54D3000895C74 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		84B2726C1AD54E5900895C74 /* LaunchScreen.xib */ = {
@@ -1230,10 +1153,19 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = app/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendors/XMPP/Vendor/libidn",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = XpressChat;
 				PROVISIONING_PROFILE = "eec426d4-5e2f-4c73-80ac-b46690272f1e";
@@ -1251,47 +1183,22 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = app/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Vendors/XMPP/Vendor/libidn",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = XpressChat;
 				PROVISIONING_PROFILE = "eec426d4-5e2f-4c73-80ac-b46690272f1e";
-			};
-			name = Release;
-		};
-		84B272541AD54D3000895C74 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "毕业设计Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = XpressChatTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/毕业设计.app/毕业设计";
-			};
-			name = Debug;
-		};
-		84B272551AD54D3000895C74 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "毕业设计Tests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = XpressChatTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/毕业设计.app/毕业设计";
 			};
 			name = Release;
 		};
@@ -1312,15 +1219,6 @@
 			buildConfigurations = (
 				84B272511AD54D3000895C74 /* Debug */,
 				84B272521AD54D3000895C74 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		84B272531AD54D3000895C74 /* Build configuration list for PBXNativeTarget "XpressChatTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84B272541AD54D3000895C74 /* Debug */,
-				84B272551AD54D3000895C74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

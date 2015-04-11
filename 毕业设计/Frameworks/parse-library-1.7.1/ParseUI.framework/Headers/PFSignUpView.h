@@ -1,13 +1,13 @@
 /*
- *  Copyright (c) 2014, Parse, LLC. All rights reserved.
+ *  Copyright (c) 2014, Facebook, Inc. All rights reserved.
  *
  *  You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
  *  copy, modify, and distribute this software in source code or binary form for use
- *  in connection with the web services and APIs provided by Parse.
+ *  in connection with the web services and APIs provided by Facebook.
  *
- *  As with any software that integrates with the Parse platform, your use of
- *  this software is subject to the Parse Terms of Service
- *  [https://www.parse.com/about/terms]. This copyright notice shall be
+ *  As with any software that integrates with the Facebook platform, your use of
+ *  this software is subject to the Facebook Developer Principles and Policies
+ *  [http://developers.facebook.com/policy/]. This copyright notice shall be
  *  included in all copies or substantial portions of the software.
  *
  *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -20,10 +20,6 @@
  */
 
 #import <UIKit/UIKit.h>
-
-#import <ParseUI/ParseUIConstants.h>
-
-PFUI_ASSUME_NONNULL_BEGIN
 
 /*!
  `PFSignUpFields` bitmask specifies the sign up elements which are enabled in the view.
@@ -48,8 +44,6 @@ typedef NS_OPTIONS(NSInteger, PFSignUpFields) {
                              PFSignUpFieldsSignUpButton |
                              PFSignUpFieldsDismissButton)
 };
-
-@class PFTextField;
 
 /*!
  The `PFSignUpView` class provides a standard sign up interface for authenticating a <PFUser>.
@@ -76,7 +70,7 @@ typedef NS_OPTIONS(NSInteger, PFSignUpFields) {
 
  @discussion Used to lay out elements correctly when the presenting view controller has translucent elements.
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, weak) UIViewController *presentingViewController;
+@property (nonatomic, weak) UIViewController *presentingViewController;
 
 ///--------------------------------------
 /// @name Customizing the Logo
@@ -85,7 +79,7 @@ typedef NS_OPTIONS(NSInteger, PFSignUpFields) {
 /*!
  @abstract The logo. By default, it is the Parse logo.
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, strong) UIView *logo;
+@property (nonatomic, strong) UIView *logo;
 
 ///--------------------------------------
 /// @name Configure Username Behaviour
@@ -110,35 +104,33 @@ typedef NS_OPTIONS(NSInteger, PFSignUpFields) {
 /*!
  @abstract The username text field.
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, strong, readonly) PFTextField *usernameField;
+@property (nonatomic, strong, readonly) UITextField *usernameField;
 
 /*!
  @abstract The password text field.
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, strong, readonly) PFTextField *passwordField;
+@property (nonatomic, strong, readonly) UITextField *passwordField;
 
 /*!
  @abstract The email text field. It is `nil` if the element is not enabled.
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, strong, readonly) PFTextField *emailField;
+@property (nonatomic, strong, readonly) UITextField *emailField;
 
 /*!
  @abstract The additional text field. It is `nil` if the element is not enabled.
 
  @discussion This field is intended to be customized.
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, strong, readonly) PFTextField *additionalField;
+@property (nonatomic, strong, readonly) UITextField *additionalField;
 
 /*!
  @abstract The sign up button. It is `nil` if the element is not enabled.
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, strong, readonly) UIButton *signUpButton;
+@property (nonatomic, strong, readonly) UIButton *signUpButton;
 
 /*!
  @abstract The dismiss button. It is `nil` if the element is not enabled.
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, strong, readonly) UIButton *dismissButton;
+@property (nonatomic, strong, readonly) UIButton *dismissButton;
 
 @end
-
-PFUI_ASSUME_NONNULL_END

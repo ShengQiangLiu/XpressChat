@@ -33,6 +33,7 @@
 	JSQMessagesBubbleImage *bubbleImageOutgoing;
 	JSQMessagesBubbleImage *bubbleImageIncoming;
 	JSQMessagesAvatarImage *avatarImageBlank;
+    
 }
 @end
 //-------------------------------------------------------------------------------------------------------------------------------------------------
@@ -69,8 +70,7 @@
 	avatarImageBlank = [JSQMessagesAvatarImageFactory avatarImageWithImage:[UIImage imageNamed:@"chat_blank"] diameter:30.0];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
     // 创建一个 firebase对象
-//	firebase = [[Firebase alloc] initWithUrl:[NSString stringWithFormat:@"%@/Chat/%@", FIREBASE, groupId]];
-    firebase = [[Firebase alloc] initWithUrl:[NSString stringWithFormat:@"%@%@", @"https://xpresschat.firebaseio.com/", groupId]];
+	firebase = [[Firebase alloc] initWithUrl:[NSString stringWithFormat:@"%@/Chat/%@", FIREBASE, groupId]];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
 	[self loadMessages];
 }

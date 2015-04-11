@@ -1,13 +1,13 @@
 /*
- *  Copyright (c) 2014, Parse, LLC. All rights reserved.
+ *  Copyright (c) 2014, Facebook, Inc. All rights reserved.
  *
  *  You are hereby granted a non-exclusive, worldwide, royalty-free license to use,
  *  copy, modify, and distribute this software in source code or binary form for use
- *  in connection with the web services and APIs provided by Parse.
+ *  in connection with the web services and APIs provided by Facebook.
  *
- *  As with any software that integrates with the Parse platform, your use of
- *  this software is subject to the Parse Terms of Service
- *  [https://www.parse.com/about/terms]. This copyright notice shall be
+ *  As with any software that integrates with the Facebook platform, your use of
+ *  this software is subject to the Facebook Developer Principles and Policies
+ *  [http://developers.facebook.com/policy/]. This copyright notice shall be
  *  included in all copies or substantial portions of the software.
  *
  *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -20,10 +20,6 @@
  */
 
 #import <UIKit/UIKit.h>
-
-#import <ParseUI/ParseUIConstants.h>
-
-PFUI_ASSUME_NONNULL_BEGIN
 
 @class PFObject;
 @class PFQuery;
@@ -56,8 +52,7 @@ PFUI_ASSUME_NONNULL_BEGIN
 
  @returns An initialized `PFQueryTableViewController` object or `nil` if the object couldn't be created.
  */
-- (instancetype)initWithStyle:(UITableViewStyle)style
-                    className:(PFUI_NULLABLE NSString *)className NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithStyle:(UITableViewStyle)style className:(NSString *)className NS_DESIGNATED_INITIALIZER;
 
 /*!
  @abstract Initializes with a class name of the PFObjects that will be associated with this table.
@@ -66,7 +61,7 @@ PFUI_ASSUME_NONNULL_BEGIN
 
  @returns An initialized `PFQueryTableViewController` object or `nil` if the object couldn't be created.
  */
-- (instancetype)initWithClassName:(PFUI_NULLABLE NSString *)className;
+- (instancetype)initWithClassName:(NSString *)className;
 
 ///--------------------------------------
 /// @name Configuring Behavior
@@ -75,48 +70,48 @@ PFUI_ASSUME_NONNULL_BEGIN
 /*!
  @abstract The class name of the <PFObject> this table will use as a datasource.
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, copy) IBInspectable NSString *parseClassName;
+@property (nonatomic, copy) NSString *parseClassName;
 
 /*!
  @abstract The key to use to display for the cell text label.
 
  @discussion This won't apply if you override <tableView:cellForRowAtIndexPath:object:>
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, copy) IBInspectable NSString *textKey;
+@property (nonatomic, copy) NSString *textKey;
 
 /*!
  @abstract The key to use to display for the cell image view.
 
  @discussion This won't apply if you override <tableView:cellForRowAtIndexPath:object:>
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, copy) IBInspectable NSString *imageKey;
+@property (nonatomic, copy) NSString *imageKey;
 
 /*!
  @abstract The image to use as a placeholder for the cell images.
 
  @discussion This won't apply if you override <tableView:cellForRowAtIndexPath:object:>
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, strong) IBInspectable UIImage *placeholderImage;
+@property (nonatomic, strong) UIImage *placeholderImage;
 
 /*!
  @abstract Whether the table should use the default loading view. Default - `YES`.
  */
-@property (nonatomic, assign) IBInspectable BOOL loadingViewEnabled;
+@property (nonatomic, assign) BOOL loadingViewEnabled;
 
 /*!
  @abstract Whether the table should use the built-in pull-to-refresh feature. Defualt - `YES`.
  */
-@property (nonatomic, assign) IBInspectable BOOL pullToRefreshEnabled;
+@property (nonatomic, assign) BOOL pullToRefreshEnabled;
 
 /*!
  @abstract Whether the table should use the built-in pagination feature. Default - `YES`.
  */
-@property (nonatomic, assign) IBInspectable BOOL paginationEnabled;
+@property (nonatomic, assign) BOOL paginationEnabled;
 
 /*!
  @abstract The number of objects to show per page. Default - `25`.
  */
-@property (nonatomic, assign) IBInspectable NSUInteger objectsPerPage;
+@property (nonatomic, assign) NSUInteger objectsPerPage;
 
 /*!
  @abstract Whether the table is actively loading new data from the server.
@@ -138,7 +133,7 @@ PFUI_ASSUME_NONNULL_BEGIN
  call [super objectsDidLoad:] in your implementation.
  @param error The Parse error from running the PFQuery, if there was any.
  */
-- (void)objectsDidLoad:(PFUI_NULLABLE NSError *)error;
+- (void)objectsDidLoad:(NSError *)error;
 
 ///--------------------------------------
 /// @name Accessing Results
@@ -147,7 +142,7 @@ PFUI_ASSUME_NONNULL_BEGIN
 /*!
  @abstract The array of instances of <PFObject> that is used as a data source.
  */
-@property (PFUI_NULLABLE_PROPERTY nonatomic, copy, readonly) NSArray *objects;
+@property (nonatomic, copy, readonly) NSArray *objects;
 
 /*!
  @abstract Returns an object at a particular indexPath.
@@ -159,7 +154,7 @@ PFUI_ASSUME_NONNULL_BEGIN
 
  @returns The object at the specified index
  */
-- (PFUI_NULLABLE PFObject *)objectAtIndexPath:(PFUI_NULLABLE NSIndexPath *)indexPath;
+- (PFObject *)objectAtIndexPath:(NSIndexPath *)indexPath;
 
 /*!
  @abstract Clears the table of all objects.
@@ -213,9 +208,9 @@ PFUI_ASSUME_NONNULL_BEGIN
 
  @returns The cell that represents this object.
  */
-- (PFUI_NULLABLE PFTableViewCell *)tableView:(UITableView *)tableView
-                       cellForRowAtIndexPath:(NSIndexPath *)indexPath
-                                      object:(PFUI_NULLABLE PFObject *)object;
+- (PFTableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+                        object:(PFObject *)object;
 
 /*!
  @discussion Override this method to customize the cell that allows the user to load the
@@ -226,9 +221,7 @@ PFUI_ASSUME_NONNULL_BEGIN
 
  @returns The cell that allows the user to paginate.
  */
-- (PFUI_NULLABLE PFTableViewCell *)tableView:(UITableView *)tableView
-                  cellForNextPageAtIndexPath:(NSIndexPath *)indexPath;
+- (PFTableViewCell *)tableView:(UITableView *)tableView cellForNextPageAtIndexPath:(NSIndexPath *)indexPath;
+
 
 @end
-
-PFUI_ASSUME_NONNULL_END

@@ -1,8 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "20150411030516561_easyicon_net_64.png",
       "scale" : "2x"
     },
     {
