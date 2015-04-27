@@ -12,8 +12,8 @@
 #import <ParseUI/ParseUI.h>
 #import <ParseFacebookUtils/PFFacebookUtils.h>
 
-#define kParseId @"vKyyGRKsLBpomdWtDW7vuyA4YBYqHAeBj1QcBaLu"
-#define kParseClientKey @"Z7EZjSlePFRjK6KKOPoNWei8UJPRxCWvRbJhW4SS"
+#define kParseId @"DKX7bHqZyHgTUPdJJBDldAtLZhJfo0RzH5qMbyyN"
+#define kParseClientKey @"n4WvdsuQo1jgHPa82ngyve6vgIA3EVvQqpb2rEWe"
 
 @interface AppDelegate ()
 

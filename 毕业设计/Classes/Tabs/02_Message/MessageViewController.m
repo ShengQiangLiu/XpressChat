@@ -24,7 +24,7 @@
     
     if (self = [super init]) {
         [self.tabBarItem setImage:[UIImage imageNamed:@"tab_messages"]];
-        self.tabBarItem.title = @"Messages";
+        self.tabBarItem.title = @"消息";
         
         // 用户退出登录通知
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(actionCleanup) name:NOTIFICATION_USER_LOGGED_OUT object:nil];
@@ -36,13 +36,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+    self.title = @"消息";    
     [self.tableView registerNib:[UINib nibWithNibName:@"MessagesCell" bundle:nil] forCellReuseIdentifier:@"MessagesCell"];
     self.tableView.tableFooterView = [[UIView alloc] init];
     //---------------------------------------------------------------------------------------------------------------------------------------------

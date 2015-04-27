@@ -45,20 +45,24 @@
     NSString *email = [_fieldEmail.text lowercaseString];
     NSString *password = _fieldPassword.text;
     //---------------------------------------------------------------------------------------------------------------------------------------------
-    if ([email length] == 0)	{ [ProgressHUD showError:@"Email must be set."]; return; }
-    if ([password length] == 0)	{ [ProgressHUD showError:@"Password must be set."]; return; }
+    if ([email length] == 0)	{ [ProgressHUD showError:@"Email 必须设置."]; return; }
+    if ([password length] == 0)	{ [ProgressHUD showError:@"Password 必须设置."]; return; }
     //---------------------------------------------------------------------------------------------------------------------------------------------
     [[NSUserDefaults standardUserDefaults] setObject:_fieldEmail.text forKey:kEmail];
     [[NSUserDefaults standardUserDefaults] setObject:_fieldPassword.text forKey:kPassword];
-    [ProgressHUD show:@"Signing in..." Interaction:NO];
+    [ProgressHUD show:@"登录中..." Interaction:NO];
     [PFUser logInWithUsernameInBackground:email password:password block:^(PFUser *user, NSError *error) {
          if (user != nil)
          {
              ParsePushUserAssign();
-             [ProgressHUD showSuccess:[NSString stringWithFormat:@"Welcome back %@!", user[PF_USER_FULLNAME]]];
+             [ProgressHUD showSuccess:[NSString stringWithFormat:@"欢迎回来 %@!", user[PF_USER_FULLNAME]]];
              [self presentViewCtrl];
+         } else {
+//             [ProgressHUD showError:error.userInfo[@"error"]];
+             [ProgressHUD showError:@"登录失败."];
+             NSLog(@"%@", error.userInfo[@"error"]);
          }
-         else [ProgressHUD showError:error.userInfo[@"error"]];
+        
      }];
 }
 
@@ -69,6 +73,7 @@
     [self presentViewController:registerCtrl animated:YES completion:^{
         
     }];
+    
 }
 
 - (void)presentViewCtrl {
@@ -80,6 +85,7 @@
     NavigationController *naviCtrl3 = [[NavigationController alloc] initWithRootViewController:_profileViewCtrl];
     _tabBarController = [[UITabBarController alloc] init];
     _tabBarController.viewControllers = [NSArray arrayWithObjects:naviCtrl1, naviCtrl2, naviCtrl3, nil];
+    _tabBarController.tabBar.backgroundColor = [UIColor clearColor];
     _tabBarController.selectedIndex = DEFAULT_TAB;
     [self presentViewController:_tabBarController animated:YES completion:nil];
 }

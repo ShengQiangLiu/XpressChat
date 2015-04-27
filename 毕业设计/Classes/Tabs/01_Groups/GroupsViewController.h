@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GroupsViewController : UITableViewController
+@interface GroupsViewController : UITableViewController <UIAlertViewDelegate>
 
 @end

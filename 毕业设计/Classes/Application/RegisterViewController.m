@@ -36,11 +36,11 @@
     NSString *password	= _fieldPassword.text;
     NSString *email		= [_fieldEmail.text lowercaseString];
     //---------------------------------------------------------------------------------------------------------------------------------------------
-    if ([name length] == 0)		{ [ProgressHUD showError:@"Name must be set."]; return; }
-    if ([password length] == 0)	{ [ProgressHUD showError:@"Password must be set."]; return; }
-    if ([email length] == 0)	{ [ProgressHUD showError:@"Email must be set."]; return; }
+    if ([name length] == 0)		{ [ProgressHUD showError:@"Name 必须设置."]; return; }
+    if ([password length] == 0)	{ [ProgressHUD showError:@"Password 必须设置."]; return; }
+    if ([email length] == 0)	{ [ProgressHUD showError:@"Email 必须设置."]; return; }
     //---------------------------------------------------------------------------------------------------------------------------------------------
-    [ProgressHUD show:@"Please wait..." Interaction:NO];
+    [ProgressHUD show:@"请稍等..." Interaction:NO];
     
     PFUser *user = [PFUser user];
     user.username = email;
@@ -54,10 +54,13 @@
          if (error == nil)
          {
              ParsePushUserAssign();
-             [ProgressHUD showSuccess:@"Succeed."];
+             [ProgressHUD showSuccess:@"注册成功."];
              [self dismissViewControllerAnimated:YES completion:nil];
+         } else {
+//             [ProgressHUD showError:error.userInfo[@"error"]];
+             [ProgressHUD show:@"注册失败."];
+
          }
-         else [ProgressHUD showError:error.userInfo[@"error"]];
      }];
     
 }

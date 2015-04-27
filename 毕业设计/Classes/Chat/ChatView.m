@@ -36,26 +36,19 @@
     
 }
 @end
-//-------------------------------------------------------------------------------------------------------------------------------------------------
 
 @implementation ChatView
-
-//-------------------------------------------------------------------------------------------------------------------------------------------------
 - (id)initWith:(NSString *)groupId_
-//-------------------------------------------------------------------------------------------------------------------------------------------------
 {
 	self = [super init];
 	groupId = groupId_;
 	return self;
 }
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------
 - (void)viewDidLoad
-//-------------------------------------------------------------------------------------------------------------------------------------------------
 {
 	[super viewDidLoad];
 	self.title = @"Chat";
-	//---------------------------------------------------------------------------------------------------------------------------------------------
 	messages = [[NSMutableArray alloc] init];
 	avatars = [[NSMutableDictionary alloc] init];
 	//---------------------------------------------------------------------------------------------------------------------------------------------
@@ -181,7 +174,47 @@
 - (void)didPressAccessoryButton:(UIButton *)sender
 //-------------------------------------------------------------------------------------------------------------------------------------------------
 {
-	NSLog(@"didPressAccessoryButton");
+//	NSLog(@"didPressAccessoryButton");
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"多媒体消息"
+                                                       delegate:self
+                                              cancelButtonTitle:@"Cancel"
+                                         destructiveButtonTitle:nil
+                                              otherButtonTitles:@"发送图片", @"发送位置", @"发送视频", nil];
+    
+    [sheet showFromToolbar:self.inputToolbar];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == actionSheet.cancelButtonIndex) {
+        return;
+    }
+    
+    switch (buttonIndex) {
+        case 0:
+//            [self.demoData addPhotoMediaMessage];
+            break;
+            
+        case 1:
+        {
+//            __weak UICollectionView *weakView = self.collectionView;
+//            
+//            [self.demoData addLocationMediaMessageCompletion:^{
+//                [weakView reloadData];
+//            }];
+        }
+            break;
+            
+        case 2:
+//            [self.demoData addVideoMediaMessage];
+            
+            
+            break;
+    }
+    
+    [JSQSystemSoundPlayer jsq_playMessageSentSound];
+    
+    [self finishSendingMessageAnimated:YES];
 }
 
 #pragma mark - JSQMessages CollectionView DataSource
